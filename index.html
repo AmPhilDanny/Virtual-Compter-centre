@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Computer Centre | Fhinovax</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-slate-950 text-slate-200 min-h-screen relative overflow-x-hidden font-['Inter'] selection:bg-brand-blue selection:text-white">
+    <!-- Ambient Background -->
+    <div class="fixed inset-0 w-full h-full overflow-hidden -z-10 bg-slate-950">
+      <div class="absolute top-[-10%] left-[-5%] w-[40rem] h-[40rem] bg-brand-blue-dark rounded-full mix-blend-screen filter blur-[100px] opacity-40 animate-blob"></div>
+      <div class="absolute top-[20%] right-[-10%] w-[35rem] h-[35rem] bg-brand-blue/30 rounded-full mix-blend-screen filter blur-[120px] opacity-50 animate-blob animation-delay-2000"></div>
+      <div class="absolute bottom-[-10%] left-[20%] w-[30rem] h-[30rem] bg-brand-gold/10 rounded-full mix-blend-screen filter blur-[100px] opacity-50 animate-blob animation-delay-4000"></div>
+      <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <nav class="fixed top-0 inset-x-0 z-50 glass border-b border-white/5 py-4 px-6 md:px-12 flex items-center justify-between backdrop-blur-xl">
+      <div class="flex items-center gap-3 cursor-pointer group">
+         <div class="w-10 h-10 bg-gradient-to-br from-brand-blue to-brand-gold rounded-xl flex items-center justify-center text-white font-bold text-2xl shadow-lg ring-1 ring-white/20 group-hover:rotate-12 transition-transform duration-300">
+           F
+         </div>
+         <span class="font-bold text-xl text-white tracking-tight">Fhinovax <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-gold">AI</span></span>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+         <a href="#services" class="hover:text-brand-gold transition-colors">AI Services</a>
+         <a href="#how-it-works" class="hover:text-brand-gold transition-colors">How it Works</a>
+         <a href="#pricing" class="hover:text-brand-gold transition-colors">Pricing</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="/login.html" class="hidden md:block px-5 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition text-sm font-medium border border-white/10">Sign In</a>
+        <a href="/login.html" class="px-5 py-2 rounded-lg bg-gradient-to-r from-brand-blue to-brand-gold hover:opacity-90 transition text-sm font-bold text-white shadow-[0_0_20px_rgba(26,75,156,0.3)] hover:shadow-[0_0_30px_rgba(222,184,65,0.4)] whitespace-nowrap">
+          Submit Job
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto flex flex-col gap-32">
+      <!-- Hero Section -->
+      <section class="flex flex-col lg:flex-row items-center gap-16 relative">
+        <div class="flex-1 flex flex-col gap-8 z-10 w-full">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border-white/10 w-max animate-fade-in">
+             <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+             <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">The Future of Digital Services</span>
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-bold leading-tight tracking-tight text-white">
+            Your Next-Gen <br/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-gold">AI Computer Centre</span>
+          </h1>
+          <p class="text-lg text-slate-400 max-w-xl leading-relaxed">
+            Submit your typing jobs, assignments, document processing, and compliance issues anytime. Our AI agents handle execution, validation, and delivery instantly, supported by human oversight.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="/dashboard.html" class="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-blue to-brand-gold hover:opacity-90 transition font-bold text-white shadow-lg text-lg flex items-center gap-2 group">
+              Start a Job Now
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <button class="px-8 py-4 rounded-xl glass hover:bg-white/10 transition font-medium text-white flex items-center gap-2">
+              View AI Pricing
+            </button>
+          </div>
+          <div class="flex items-center gap-6 mt-6">
+            <div class="flex -space-x-4">
+              <img class="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" src="https://i.pravatar.cc/100?img=1" alt="Face 1">
+              <img class="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" src="https://i.pravatar.cc/100?img=2" alt="Face 2">
+              <img class="w-10 h-10 rounded-full border-2 border-slate-900 object-cover" src="https://i.pravatar.cc/100?img=3" alt="Face 3">
+              <div class="w-10 h-10 rounded-full border-2 border-slate-900 bg-slate-800 flex items-center justify-center text-xs font-bold text-white">+5K</div>
+            </div>
+            <div class="text-sm text-slate-400">
+               <strong class="text-white block text-sm">Over 5,000+ jobs</strong>
+               completed natively by AI.
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hero Interactive Graphic -->
+        <div class="flex-1 relative w-full lg:min-h-[500px] flex justify-center lg:justify-end perspective-1000">
+           <div class="w-full max-w-md glass rounded-2xl p-6 border border-white/10 shadow-2xl relative z-10 transform lg:rotate-y-[-10deg] lg:rotate-x-[5deg] hover:rotate-0 transition-transform duration-500 ease-out">
+             <div class="flex items-center justify-between mb-8 border-b border-white/10 pb-4">
+               <h3 class="font-semibold text-lg text-white flex items-center gap-2">
+                 <span class="w-2 h-2 rounded-full bg-green-500"></span> AI Pipeline Active
+               </h3>
+               <span class="text-xs text-brand-gold font-mono tracking-widest bg-brand-gold/10 px-2 py-1 rounded">RAG ENABLED</span>
+             </div>
+             
+             <div class="flex flex-col gap-4 relative">
+               <div class="absolute left-4 top-4 bottom-4 w-px bg-gradient-to-b from-brand-blue via-brand-gold to-transparent opacity-50"></div>
+               
+               <!-- Step 1 -->
+               <div class="flex items-start gap-4 z-10 bg-slate-900/50 p-3 rounded-lg border border-white/5 backdrop-blur-sm">
+                 <div class="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center text-white shrink-0 mt-1 shadow-[0_0_15px_rgba(26,75,156,0.5)]">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" /></svg>
+                 </div>
+                 <div>
+                   <h4 class="text-sm font-bold text-slate-200">Intake Agent</h4>
+                   <p class="text-xs text-slate-400 mt-1">Validating document upload...</p>
+                 </div>
+               </div>
+
+               <!-- Step 2 -->
+               <div class="flex items-start gap-4 z-10 bg-slate-900/50 p-3 rounded-lg border border-brand-gold/30 backdrop-blur-sm">
+                 <div class="w-8 h-8 rounded-full bg-brand-gold flex items-center justify-center text-slate-900 shrink-0 mt-1 shadow-[0_0_15px_rgba(222,184,65,0.5)]">
+                   <svg class="h-4 w-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                 </div>
+                 <div>
+                   <h4 class="text-sm font-bold text-white">Execution Agent</h4>
+                   <p class="text-xs text-brand-gold mt-1">Processing layout & writing content...</p>
+                 </div>
+               </div>
+
+               <!-- Step 3 -->
+               <div class="flex items-start gap-4 z-10 glass p-3 rounded-lg opacity-50">
+                 <div class="w-8 h-8 rounded-full bg-slate-700 flex items-center justify-center text-white shrink-0 mt-1">
+                   <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                 </div>
+                 <div>
+                   <h4 class="text-sm font-bold text-slate-400">QA Agent</h4>
+                   <p class="text-xs text-slate-500 mt-1">Pending confidence scoring...</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+           
+           <!-- Decorative elements -->
+           <div class="absolute right-0 bottom-10 w-24 h-24 bg-brand-gold/20 rounded-full blur-xl animate-pulse"></div>
+           <div class="absolute left-10 top-10 w-32 h-32 bg-brand-blue/30 rounded-full blur-xl animate-pulse animation-delay-2000"></div>
+        </div>
+      </section>
+
+      <!-- Services Grid -->
+      <section id="services" class="flex flex-col gap-12 pt-16 border-t border-white/5">
+        <div class="text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">A complete digital center, <span class="text-brand-gold">automated.</span></h2>
+          <p class="text-slate-400 max-w-2xl mx-auto">From quick typing jobs to complex academic formatting, our AI agents handle specialized services exactly to specification 24/7.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="glass p-8 rounded-2xl hover:bg-white/10 transition-colors border border-white/5 group cursor-pointer relative overflow-hidden">
+             <div class="absolute inset-0 bg-gradient-to-br from-brand-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+             <div class="w-12 h-12 rounded-xl bg-slate-800 border border-brand-blue/30 flex items-center justify-center mb-6 shadow-[0_0_10px_rgba(26,75,156,0.2)]">
+               <span class="text-2xl text-brand-blue">📄</span>
+             </div>
+             <h3 class="text-xl font-bold text-white mb-3">Typing & Formatting</h3>
+             <p class="text-sm text-slate-400 leading-relaxed">Fast, accurate transcription, document generation, formatting (APA, MLA) performed instantly by AI models.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass p-8 rounded-2xl hover:bg-white/10 transition-colors border border-white/5 group cursor-pointer relative overflow-hidden">
+             <div class="absolute inset-0 bg-gradient-to-br from-brand-gold/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+             <div class="w-12 h-12 rounded-xl bg-slate-800 border border-brand-gold/30 flex items-center justify-center mb-6 shadow-[0_0_10px_rgba(222,184,65,0.2)]">
+               <span class="text-2xl text-brand-gold">💼</span>
+             </div>
+             <h3 class="text-xl font-bold text-white mb-3">CVs & Cover Letters</h3>
+             <p class="text-sm text-slate-400 leading-relaxed">ATS-optimized resumes, customized cover letters, and Statement of Purpose generation tailored to any industry.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass p-8 rounded-2xl hover:bg-white/10 transition-colors border border-white/5 group cursor-pointer relative overflow-hidden">
+             <div class="absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+             <div class="w-12 h-12 rounded-xl bg-slate-800 border border-green-500/30 flex items-center justify-center mb-6 shadow-[0_0_10px_rgba(34,197,94,0.2)]">
+               <span class="text-2xl text-green-500">🏛️</span>
+             </div>
+             <h3 class="text-xl font-bold text-white mb-3">Gov & Compliance</h3>
+             <p class="text-sm text-slate-400 leading-relaxed">NIN issue resolution support, online form filling (NYSC, JAMB), and business name registration assistance.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="border-t border-white/5 py-12 text-center mt-20 relative glass">
+      <div class="flex items-center justify-center gap-2 mb-4 opacity-50">
+        <div class="w-8 h-8 rounded shrink-0 bg-gradient-to-br from-brand-blue to-brand-gold flex items-center justify-center text-xs font-bold text-white">F</div>
+        <span class="font-bold text-white">Fhinovax AI Dashboard System</span>
+      </div>
+      <p class="text-sm text-slate-500">Deployable via PHP (Laravel), Python (FastAPI), and cPanel Hosting.</p>
+      <p class="text-sm text-slate-600 mt-2">&copy; 2026 Fhinovax Multitech Solutions. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
