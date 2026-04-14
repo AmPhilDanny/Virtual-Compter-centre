@@ -10,7 +10,7 @@
 
 This project is a **fully AI-powered online computer centre** that digitizes and automates traditional cyber café services—enhanced with artificial intelligence, workflow automation, and a customizable CMS.
 
-The platform allows clients to submit jobs (typing, assignments, NIN issues, document services, etc.), while **AI agents handle intake, validation, execution, quality assurance, and delivery**, with optional human oversight.
+The platform allows clients to submit jobs (typing, assignments, NIN issues, document services, etc.), while **an AI Intake Chatbot automates job collection, forms leads, and interacts with clients**, organizing everything seamlessly before passing it to **Human Experts** for actual execution.
 
 The system is:
 
@@ -100,9 +100,9 @@ The system is:
 
 ### 4.2 AI Autonomy Levels
 
-*   AI only
-*   AI + Human review
-*   Human only
+*   AI Intake & Lead Generation + Auto-Pricing
+*   AI Support Chat + Human Execution (Standard)
+*   Fully Human Managed
 
 ***
 
@@ -122,35 +122,24 @@ The system is:
 
 ***
 
-### 5.2 AI Workflow (Step‑by‑Step)
+### 5.2 Workflow (Step‑by‑Step)
 
-    Client Submission
+    Client Navigates to Platform
             ↓
-    Intake Agent
-       └─ Checks service type
-       └─ Validates fields & files
+    AI Intake Chatbot (Virtual Receptionist)
+       └─ Greets client and asks what service they need
+       └─ Checks service type against catalog
+       └─ Actively chats to collect missing info (Files, Scope, Requirements)
             ↓
-    Data Sufficiency Agent
-       └─ Requests missing info (if any)
+    Job / Lead Compilation
+       └─ AI analyzes complexity from the chat transcript
+       └─ Packages to a single Job Ticket (Lead Generation)
             ↓
-    Analysis Agent
-       └─ Determines complexity
-       └─ Assigns AI autonomy level
+    Human Staff Execution
+       └─ Admins/Staff review the AI-captured Lead
+       └─ Human experts manually fulfill the job (Writing CV, NYSC forms, etc.)
             ↓
-    Execution Agent
-       └─ Uses AI models & datasets
-            ↓
-    QA Agent
-       └─ Quality control
-       └─ Confidence scoring
-            ↓
-    Escalation Agent (Optional)
-       └─ Human review if flagged
-            ↓
-    Delivery to Client
-            ↓
-    Learning Agent
-       └─ Updates prompts based on feedback
+    Delivery back to Client
 
 ***
 
