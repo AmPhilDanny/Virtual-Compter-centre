@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel | Fhinovax AI System</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-slate-950 text-slate-200 min-h-screen flex font-['Inter'] selection:bg-brand-blue selection:text-white overflow-hidden">
+    
+    <!-- Ambient Background -->
+    <div class="fixed inset-0 w-full h-full overflow-hidden z-[-1] pointer-events-none">
+      <div class="absolute top-0 right-0 w-[40rem] h-[40rem] bg-brand-gold/5 rounded-full blur-[100px]"></div>
+      <div class="absolute bottom-0 left-0 w-[50rem] h-[50rem] bg-brand-blue/10 rounded-full blur-[120px]"></div>
+    </div>
+
+    <!-- Admin Sidebar -->
+    <aside class="w-72 glass border-r border-white/5 flex flex-col z-20 shrink-0 relative bg-slate-900/80 backdrop-blur-3xl shadow-2xl">
+      <div class="p-6 border-b border-white/5 flex items-center gap-3">
+         <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-orange-400 rounded-xl flex items-center justify-center text-white font-bold text-xl ring-1 ring-white/10 shadow-[0_0_15px_rgba(239,68,68,0.4)]">A</div>
+         <div>
+            <div class="font-bold text-white text-lg tracking-tight">Fhinovax <span class="text-brand-gold">Control</span></div>
+            <div class="text-[10px] text-red-400 font-bold tracking-widest uppercase">Super Admin</div>
+         </div>
+      </div>
+      
+      <div class="overflow-y-auto flex-1">
+        <nav class="p-4 flex flex-col gap-1">
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-widest px-4 pb-2 pt-4">Oversight</div>
+          
+          <a href="#" class="px-4 py-2.5 rounded-xl bg-white/10 text-white font-semibold flex items-center justify-between border border-white/10 shadow-[inner_0_1px_rgba(255,255,255,0.1)]">
+            <span class="flex items-center gap-3"><span class="text-brand-blue">📊</span> Overview</span>
+          </a>
+          <a href="#" class="px-4 py-2.5 rounded-xl hover:bg-white/5 font-medium text-slate-400 hover:text-slate-200 transition flex items-center justify-between">
+            <span class="flex items-center gap-3"><span>🤖</span> AI RAG Engine</span>
+            <span class="px-2 py-0.5 rounded text-[10px] bg-green-500/10 text-green-400 font-bold">ACTIVE</span>
+          </a>
+          <a href="#" class="px-4 py-2.5 rounded-xl hover:bg-white/5 font-medium text-slate-400 hover:text-slate-200 transition flex items-center justify-between">
+            <span class="flex items-center gap-3"><span>🧾</span> Pending Verifications</span>
+            <span class="w-5 h-5 rounded-full bg-red-500 flex items-center justify-center text-[10px] text-white font-bold animate-pulse">2</span>
+          </a>
+          <a href="#" class="px-4 py-2.5 rounded-xl hover:bg-white/5 font-medium text-slate-400 hover:text-slate-200 transition flex items-center gap-3">
+            <span>🗂️</span> Live Job Pipeline
+          </a>
+
+          <div class="text-xs font-semibold text-slate-500 uppercase tracking-widest px-4 pb-2 pt-6">CMS Controls</div>
+          <a href="#" class="px-4 py-2.5 rounded-xl hover:bg-white/5 font-medium text-slate-400 hover:text-slate-200 transition flex items-center gap-3">
+            <span>🌐</span> Pages & Branding
+          </a>
+          <a href="#" class="px-4 py-2.5 rounded-xl hover:bg-white/5 font-medium text-slate-400 hover:text-slate-200 transition flex items-center gap-3">
+            <span>👥</span> Client Permissions
+          </a>
+          <a href="#" class="px-4 py-2.5 rounded-xl hover:bg-white/5 font-medium text-slate-400 hover:text-slate-200 transition flex items-center gap-3">
+            <span>🛒</span> Standard Services & Pricing
+          </a>
+        </nav>
+      </div>
+      
+      <div class="p-6 border-t border-white/5">
+         <a href="/login.html" class="flex items-center gap-3 text-sm font-medium text-slate-400 hover:text-white transition">
+           <span>🚪</span> Logout to Frontend
+         </a>
+      </div>
+    </aside>
+
+    <!-- Main Admin Workspace -->
+    <main class="flex-1 flex flex-col h-screen overflow-y-auto z-10 relative">
+      
+      <!-- Topbar -->
+      <header class="h-20 glass border-b border-white/5 px-8 flex items-center justify-between sticky top-0 z-20 backdrop-blur-2xl">
+        <div class="flex items-center gap-4">
+           <h1 class="text-xl font-bold text-white tracking-tight">System Global Dashboard</h1>
+        </div>
+        
+        <div class="flex items-center gap-6">
+          <div class="text-sm px-4 py-1.5 rounded bg-brand-blue/10 border border-brand-blue/20 text-brand-blue font-medium flex items-center gap-2">
+            Laravel + FastAPI <span class="w-1.5 h-1.5 rounded-full bg-brand-blue"></span>
+          </div>
+          <img src="https://i.pravatar.cc/100?img=11" class="w-9 h-9 rounded-full border border-brand-gold" alt="Admin Face">
+        </div>
+      </header>
+
+      <div class="p-8 max-w-7xl mx-auto w-full flex flex-col gap-8 pb-20">
+        
+        <!-- Metrics -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+           <div class="glass p-6 rounded-2xl border border-white/10 shadow-lg relative overflow-hidden group">
+              <div class="absolute inset-0 bg-brand-blue/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <p class="text-sm text-slate-400 font-medium mb-1">AI Jobs Completed</p>
+              <h2 class="text-3xl font-bold text-white">1,492</h2>
+              <p class="text-xs text-green-400 mt-2 flex items-center gap-1">↑ 12% this week</p>
+           </div>
+           <div class="glass p-6 rounded-2xl border border-white/10 shadow-lg relative overflow-hidden group">
+              <div class="absolute inset-0 bg-brand-gold/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <p class="text-sm text-slate-400 font-medium mb-1">Active AI Confidence</p>
+              <h2 class="text-3xl font-bold text-white text-brand-gold">98.4%</h2>
+              <p class="text-xs text-slate-500 mt-2 flex items-center gap-1">Across all models</p>
+           </div>
+           <div class="glass p-6 rounded-2xl border border-white/10 shadow-lg relative overflow-hidden group">
+              <div class="absolute inset-0 bg-red-400/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <p class="text-sm text-slate-400 font-medium mb-1">Pending Receipts</p>
+              <h2 class="text-3xl font-bold text-white text-red-400 flex items-center gap-3">2 <span class="w-2 h-2 bg-red-500 rounded-full animate-bounce"></span></h2>
+              <p class="text-xs text-slate-500 mt-2 flex items-center gap-1">Awaiting admin review</p>
+           </div>
+           <div class="glass p-6 rounded-2xl border border-white/10 shadow-lg relative overflow-hidden group">
+              <div class="absolute inset-0 bg-green-400/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <p class="text-sm text-slate-400 font-medium mb-1">Revenue (Current)</p>
+              <h2 class="text-3xl font-bold text-white">₦42,500</h2>
+              <p class="text-xs text-green-400 mt-2 flex items-center gap-1">↑ 4% this month</p>
+           </div>
+        </div>
+
+        <!-- Action Center -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+           
+           <!-- Offline Receipt Scanner UI -->
+           <div class="glass rounded-2xl border border-red-500/20 shadow-2xl overflow-hidden shadow-[0_0_30px_rgba(239,68,68,0.05)]">
+             <div class="p-6 border-b border-white/5 bg-white/5 flex items-center justify-between">
+                <div>
+                   <h3 class="font-bold text-white flex items-center gap-2 text-lg">Action Required</h3>
+                   <p class="text-xs text-slate-400 font-mono tracking-widest mt-1 uppercase">Bank Transfer Verifications</p>
+                </div>
+                <!-- AI Shield Badge -->
+                <div class="bg-green-500/10 border border-green-500/20 text-green-400 text-[10px] uppercase font-bold px-3 py-1.5 rounded-full flex items-center gap-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                  AI Scanned (Passed)
+                </div>
+             </div>
+             
+             <div class="p-6 flex flex-col gap-6">
+                <!-- Receipt Pending -->
+                <div class="p-4 rounded-xl border border-white/10 bg-slate-900 flex flex-col md:flex-row gap-6 relative group">
+                   <div class="w-full md:w-48 h-32 bg-slate-800 rounded-lg border border-white/5 overflow-hidden relative cursor-pointer">
+                      <!-- Mock Receipt Image -->
+                      <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-white/5 flex items-center justify-center opacity-50">
+                        <span class="text-4xl">🧾</span>
+                      </div>
+                      <div class="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition">
+                         <span class="text-xs font-bold bg-white/20 px-3 py-1.5 rounded-full backdrop-blur-md text-white border border-white/30">View Receipt</span>
+                      </div>
+                   </div>
+                   <div class="flex-1 flex flex-col justify-between">
+                      <div>
+                        <div class="flex items-center justify-between">
+                           <h4 class="font-bold text-white text-lg">Alex Johnsson</h4>
+                           <span class="text-brand-gold font-bold font-mono">₦5,000</span>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-1">Transaction Ref: <span class="text-white">FH-829A-X39</span></p>
+                        <div class="mt-2 text-[10px] uppercase font-bold text-slate-500">Service: <span class="text-slate-300">CV & Cover Letter Writing</span></div>
+                      </div>
+                      
+                      <div class="flex items-center gap-3 mt-4">
+                         <button class="flex-1 py-2 rounded-lg bg-red-500/10 text-red-500 hover:bg-red-500/20 font-bold text-sm transition border border-red-500/20">Reject (Spam)</button>
+                         <button class="flex-1 py-2 rounded-lg bg-green-500 hover:bg-green-400 font-bold text-slate-950 shadow-lg text-sm transition">Verify & Approve</button>
+                      </div>
+                   </div>
+                </div>
+             </div>
+           </div>
+
+           <!-- Live Job Activity -->
+           <div class="glass rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+             <div class="p-6 border-b border-white/5 bg-white/5">
+                <h3 class="font-bold text-white text-lg">AI Execution Queue</h3>
+                <p class="text-xs text-slate-400 font-mono tracking-widest mt-1 uppercase">Jobs Currently Being Processed</p>
+             </div>
+             
+             <div class="p-6 flex flex-col gap-4">
+                <div class="flex items-center justify-between p-4 bg-slate-900 border border-white/5 rounded-xl">
+                   <div class="flex items-center gap-4">
+                      <div class="w-10 h-10 rounded-full bg-brand-blue/20 flex items-center justify-center text-brand-blue text-sm shrink-0 border border-brand-blue/30 shadow-[0_0_10px_rgba(26,75,156,0.3)]"><span class="animate-pulse">⚙️</span></div>
+                      <div>
+                         <div class="text-sm font-bold text-white">NYSC Statement Document Formatting</div>
+                         <div class="text-xs font-mono text-slate-500 mt-1">Client: david@...</div>
+                      </div>
+                   </div>
+                   <div class="text-right">
+                      <div class="text-xs bg-brand-gold/10 text-brand-gold px-2 py-0.5 rounded font-bold uppercase">Executing</div>
+                      <div class="text-[10px] text-slate-500 mt-1">~0.4s remaining</div>
+                   </div>
+                </div>
+
+                <div class="flex items-center justify-between p-4 bg-slate-900 border border-white/5 rounded-xl opacity-60">
+                   <div class="flex items-center gap-4">
+                      <div class="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center text-green-400 text-sm shrink-0 border border-green-500/30">✔️</div>
+                      <div>
+                         <div class="text-sm font-bold text-white">Audio Transcription (5 Mins)</div>
+                         <div class="text-xs font-mono text-slate-500 mt-1">Client: jane@...</div>
+                      </div>
+                   </div>
+                   <div class="text-right">
+                      <div class="text-xs bg-green-500/10 text-green-400 px-2 py-0.5 rounded font-bold uppercase">QA Check (99%)</div>
+                   </div>
+                </div>
+             </div>
+             <div class="px-6 pb-6 pt-2">
+                <button class="w-full py-2.5 rounded-lg border border-white/10 hover:bg-white/10 transition text-sm font-medium text-white">View Full History</button>
+             </div>
+           </div>
+
+        </div>
+
+      </div>
+    </main>
+
+  </body>
+</html>
